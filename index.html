@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOUSE OF JOE | Branded Apparel & Promotional Materials</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-brand { font-family: 'Cinzel', serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 selection:bg-orange-500 selection:text-white">
+
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="bg-slate-900 text-white py-2 px-4 text-center text-xs font-bold tracking-widest uppercase">
+        ⚡ THEN WE DELIVER ON THEM. NOT JUST DELIVERED, DEFINED! • NAIROBI, KENYA
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Mobile Menu Toggle -->
+            <button onclick="toggleMobileMenu()" class="md:hidden text-slate-700 hover:text-slate-900 text-xl">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+
+            <!-- Brand Logo with Location Marker Icon -->
+            <a href="#" class="text-xl sm:text-2xl font-black tracking-widest uppercase font-brand flex items-center gap-2 text-slate-900">
+                <div class="w-8 h-8 rounded-full bg-slate-900 flex items-center justify-center text-orange-500 text-sm">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                HOUSE OF <span class="text-orange-500">JOE</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8 text-xs font-bold tracking-widest uppercase text-slate-600">
+                <a href="#about" class="hover:text-orange-500 transition">About</a>
+                <a href="#services" class="hover:text-orange-500 transition">Services</a>
+                <a href="#how-we-work" class="hover:text-orange-500 transition">How We Work</a>
+                <a href="#clients" class="hover:text-orange-500 transition">Clients</a>
+                <a href="#contact" class="hover:text-orange-500 transition">Contact</a>
+            </nav>
+
+            <!-- Action Button -->
+            <div>
+                <a href="#contact" class="bg-[#1D3557] hover:bg-slate-900 text-white font-extrabold uppercase tracking-widest text-xs px-6 py-3 rounded-md transition shadow-md">
+                    Get a Quote
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU MODAL -->
+    <div id="mobileMenu" class="fixed inset-0 z-50 bg-slate-900/95 backdrop-blur-2xl hidden flex-col justify-between p-6 text-white">
+        <div class="flex justify-between items-center">
+            <span class="font-brand text-lg font-bold text-orange-500">HOUSE OF JOE</span>
+            <button onclick="toggleMobileMenu()" class="text-slate-400 text-2xl"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <nav class="flex flex-col gap-6 text-xl font-bold tracking-widest uppercase text-center my-auto">
+            <a href="#about" onclick="toggleMobileMenu()" class="hover:text-orange-400">About</a>
+            <a href="#services" onclick="toggleMobileMenu()" class="hover:text-orange-400">Services</a>
+            <a href="#how-we-work" onclick="toggleMobileMenu()" class="hover:text-orange-400">How We Work</a>
+            <a href="#clients" onclick="toggleMobileMenu()" class="hover:text-orange-400">Clients</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="hover:text-orange-400">Contact</a>
+        </nav>
+        <p class="text-center text-xs text-slate-400 uppercase tracking-widest">© 2026 HOUSE OF JOE. All Rights Reserved.</p>
+    </div>
+
+    <!-- HERO SECTION 1 (NAVY BLUE CARD MATCHING SCREENSHOT) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-6">
+        <div class="bg-[#1D3557] rounded-2xl text-white p-8 sm:p-14 lg:p-20 relative overflow-hidden shadow-2xl">
+            <div class="max-w-3xl relative z-10">
+                <h1 class="text-4xl sm:text-6xl font-black font-brand leading-tight tracking-tight mb-6">
+                    Let's talk about your <span class="text-orange-400">next tender.</span>
+                </h1>
+                
+                <div class="grid sm:grid-cols-2 gap-6 my-10 border-t border-slate-700/60 pt-8">
+                    <div>
+                        <span class="text-xs uppercase tracking-widest font-bold text-slate-400 block mb-2">Contact</span>
+                        <p class="font-extrabold text-lg text-white">Joe Njuguna, Founder</p>
+                        <p class="text-sm text-slate-300 mt-1">+254 797 634 728</p>
+                        <p class="text-sm text-slate-300">deliveriq8@gmail.com</p>
+                    </div>
+                    <div>
+                        <span class="text-xs uppercase tracking-widest font-bold text-slate-400 block mb-2">Location</span>
+                        <p class="font-extrabold text-lg text-white">Nairobi, Kenya</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://wa.me/254797634728" target="_blank" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold uppercase tracking-wider text-xs px-6 py-4 rounded-md transition flex items-center gap-2 shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp Us
+                    </a>
+                    <a href="tel:+254797634728" class="border-2 border-white/80 hover:bg-white hover:text-slate-900 text-white font-extrabold uppercase tracking-wider text-xs px-6 py-4 rounded-md transition flex items-center gap-2">
+                        <i class="fa-solid fa-phone"></i> Call Us
+                    </a>
+                    <a href="mailto:deliveriq8@gmail.com" class="border-2 border-white/80 hover:bg-white hover:text-slate-900 text-white font-extrabold uppercase tracking-wider text-xs px-6 py-4 rounded-md transition flex items-center gap-2">
+                        <i class="fa-solid fa-envelope"></i> Email Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HERO SECTION 2 (LIGHT BACKGROUND CARD MATCHING SCREENSHOT) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="bg-[#FBF9F5] rounded-2xl border border-slate-200/80 p-8 sm:p-14 lg:p-16 text-slate-900 shadow-sm">
+            <div class="max-w-3xl">
+                <h2 class="text-4xl sm:text-6xl font-black font-brand text-[#1D3557] leading-tight mb-4">
+                    Then we <span class="text-orange-500">deliver</span> on them.
+                </h2>
+                <p class="text-purple-700 italic font-semibold text-lg sm:text-xl mb-6">
+                    Not just Delivered, <span class="text-rose-400">Defined!</span>
+                </p>
+                <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-8">
+                    House of Joe supplies branded promotional materials to corporate and institutional clients across Kenya, built around one discipline: winning tenders and fulfilling them properly.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://wa.me/254797634728" target="_blank" class="bg-[#1D3557] hover:bg-slate-900 text-white font-extrabold uppercase tracking-wider text-xs px-7 py-4 rounded-md transition shadow-md">
+                        Get a Quote on WhatsApp
+                    </a>
+                    <a href="tel:+254797634728" class="border border-slate-400 hover:border-slate-800 text-slate-800 font-extrabold uppercase tracking-wider text-xs px-7 py-4 rounded-md transition">
+                        Call Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="text-orange-500 text-xs font-extrabold uppercase tracking-widest">Capabilities</span>
+            <h2 class="text-3xl font-black font-brand text-[#1D3557] uppercase tracking-wider mt-1">WHAT WE SUPPLY</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white border border-slate-200 p-8 rounded-xl hover:shadow-lg transition">
+                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-orange-500 text-xl font-bold mb-5">
+                    <i class="fa-solid fa-file-contract"></i>
+                </div>
+                <h3 class="font-bold text-[#1D3557] text-lg mb-2 font-brand uppercase">Tender Fulfillment</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">Executing corporate, NGO, and institutional tenders with absolute adherence to specifications and strict timelines.</p>
+            </div>
+            <div class="bg-white border border-slate-200 p-8 rounded-xl hover:shadow-lg transition">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-[#1D3557] text-xl font-bold mb-5">
+                    <i class="fa-solid fa-shirt"></i>
+                </div>
+                <h3 class="font-bold text-[#1D3557] text-lg mb-2 font-brand uppercase">Branded Apparel</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">High-grade branded uniforms, embroidery, executive wear, and promotional apparel customized for corporate identity.</p>
+            </div>
+            <div class="bg-white border border-slate-200 p-8 rounded-xl hover:shadow-lg transition">
+                <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center text-emerald-600 text-xl font-bold mb-5">
+                    <i class="fa-solid fa-boxes-packing"></i>
+                </div>
+                <h3 class="font-bold text-[#1D3557] text-lg mb-2 font-brand uppercase">Promotional Items</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">Comprehensive supply of corporate gift items, branded stationery, banners, and event merchandise across Kenya.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-white py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            <div>
+                <a href="#" class="text-xl font-brand font-black tracking-widest uppercase">HOUSE OF <span class="text-orange-500">JOE</span></a>
+                <p class="text-xs text-slate-400 mt-2">Founded by Joe Njuguna in Nairobi, Kenya. Not just Delivered, Defined!</p>
+            </div>
+            <div class="flex gap-6 text-xs text-slate-400 uppercase tracking-widest font-semibold">
+                <a href="#services" class="hover:text-orange-400">Services</a>
+                <a href="#contact" class="hover:text-orange-400">Contact</a>
+                <a href="tel:+254797634728" class="hover:text-orange-400">+254 797 634 728</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        }
+    </script>
+</body>
+</html>
